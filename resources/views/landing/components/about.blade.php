@@ -6,7 +6,7 @@
             <span class="fw-medium text-primary">Name:</span> {{ $profile->name }}
         </div>
         <div class="col-sm-6 py-1">
-            <span class="fw-medium text-primary">Birthday:</span> {{ $profile->birthday }}
+            <span class="fw-medium text-primary">Birthday:</span> {{ \Carbon\Carbon::parse($profile->birthday)->format('d F Y') }}
         </div>
         <div class="col-sm-6 py-1">
             <span class="fw-medium text-primary">Degree:</span> {{ $profile->degree }}
