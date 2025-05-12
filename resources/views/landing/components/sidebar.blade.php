@@ -15,7 +15,7 @@
             <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="d-flex align-items-end justify-content-between border-top">
-            <a href="/assets/cv-dedy-priyatna.pdf" class="btn w-50 border-end">Download CV</a>
+            <a href="{{asset('assets/documents/cv-dedy-priyatna.pdf')}}" class="btn w-50 border-end">Download CV</a>
             <a href="#contact" class="btn w-50 btn-scroll">Contact Me</a>
         </div>
     </div>
