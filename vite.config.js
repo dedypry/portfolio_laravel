@@ -52,6 +52,10 @@ function libsWindowAssignment() {
 }
 
 export default defineConfig({
+  server: {
+    https: true
+  },
+  base: 'https://dedypry.id/',
   plugins: [
     laravel({
       input: [
