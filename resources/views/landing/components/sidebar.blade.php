@@ -1,6 +1,6 @@
 <div class="col-lg-4 sticky-lg-top vh-100">
     <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-        <img class="w-100 img-fluid mb-4" src="{{ asset('assets/img/profile.png') }}" alt="Image">
+        <img class="w-100 img-fluid mb-4" src="{{ $profile->photo }}" alt="Image">
         <h1 class="text-primary mt-2">{{ $profile->name }}</h1>
         <div class="mb-4" style="height: 22px;">
             <h4 class="typed-text-output d-inline-block text-light"></h4>

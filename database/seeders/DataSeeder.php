@@ -32,7 +32,7 @@ class DataSeeder extends Seeder
     ]);
 
     $profile = Profile::create([
-      "photo" => "/assets/img/avatar/profile.PNG",
+      "photo" => "/assets/img/profile.png",
       "user_id" => $user->id,
       "name" => "dedy priyatna",
       "degree" => "Master",
