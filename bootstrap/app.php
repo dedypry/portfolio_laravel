@@ -15,9 +15,6 @@ return Application::configure(basePath: dirname(__DIR__))
   ->withMiddleware(function (Middleware $middleware) {
     $middleware->web(LocaleMiddleware::class);
   })
-  ->withMiddleware(function (Middleware $middleware) {
-    $middleware->web(ForceHttps::class);
-  })
   ->withExceptions(function (Exceptions $exceptions) {
     //
   })->create();
