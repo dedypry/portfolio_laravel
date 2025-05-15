@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Experience;
+use App\Models\Portfolio;
 use App\Models\Profile;
 use App\Models\Service;
 use App\Models\Skill;
@@ -16,6 +17,8 @@ class LandingController extends Controller
         $skills = Skill::where('profile_id', $profile->id)->get();
         $experience = Experience::where('profile_id', $profile->id)->get();
         $services = Service::where('profile_id', $profile->id)->get();
-        return view('landing.index', compact(['profile', 'skills', 'experience', 'services']));
+        $portfolio = Portfolio::where('profile_id', $profile->id)->get();
+
+        return view('landing.index', compact(['profile', 'skills', 'experience', 'services', 'portfolio']));
     }
 }

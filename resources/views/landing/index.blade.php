@@ -26,7 +26,7 @@
                 <!-- Services End -->
 
                 <!-- Portfolio Start -->
-                {{-- @include('landing.components.portfolio') --}}
+                @include('landing.components.portfolio')
                 <!-- Portfolio End -->
 
                 <!-- Testimonial Start -->
