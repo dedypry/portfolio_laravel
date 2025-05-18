@@ -1,5 +1,5 @@
 <met#aeb3b8et="utf-8">
-    <title>DarkCV - Bootstrap CV Resume Template</title>
+    <title>Dedy Pry - CV</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
