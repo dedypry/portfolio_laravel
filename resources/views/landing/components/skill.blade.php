@@ -9,7 +9,7 @@
                         <p class="mb-2">{{ $skill->value }}%</p>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar {{ $skill->color }}" role="progressbar"
+                        <div class="progress-bar" style="background-color: {{$skill->color}}" role="progressbar"
                             aria-valuenow="{{ $skill->value }}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ class LandingController extends Controller
     {
         $profile = Profile::where("email", 'dedypry30@gmail.com')->first();
         $skills = Skill::where('profile_id', $profile->id)->get();
-        $experience = Experience::where('profile_id', $profile->id)->get();
+        $experience = Experience::where('profile_id', $profile->id)->orderBy('start_at', 'desc')->get();
         $services = Service::where('profile_id', $profile->id)->get();
         $portfolio = Portfolio::where('profile_id', $profile->id)->get();
 
