@@ -106,5 +106,9 @@ class Profile extends Page implements HasForms
     {
 
         $this->profile->update($this->form->getState());
+        Notification::make()
+            ->title('Saved successfully')
+            ->success()
+            ->send();
     }
 }
