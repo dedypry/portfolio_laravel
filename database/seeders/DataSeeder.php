@@ -28,7 +28,8 @@ class DataSeeder extends Seeder
     $user = User::create([
       "name" => "dedy priyatna",
       "email" => "dedypry30@gmail.com",
-      "password" => bcrypt('H4nyaakusaja@')
+      "password" => bcrypt('H4nyaakusaja@'),
+      "email_verified_at"=> now()
     ]);
 
     $profile = Profile::create([
