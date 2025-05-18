@@ -1,11 +1,13 @@
 <section class="wow fadeIn" data-wow-delay="0.1s">
     <div class="bg-secondary text-light text-center p-5">
         <div class="d-flex justify-content-center mb-4">
-            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+            @foreach ($sosmed as $item)
+            <a class="btn btn-dark btn-square mx-1" href="{{$item->url}}"><i class="fab {{$item->icon}}"></i></a>
+            @endforeach
+            {{-- <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
             <a class="btn btn-dark btn-square mx-1" href="https://www.linkedin.com/in/dedy-priyatna-2b1801202/"><i
                     class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-dark btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a> --}}
         </div>
         <div class="d-flex justify-content-center mb-3">
             <a class="text-light px-3 border-end" href="#">Privacy</a>
